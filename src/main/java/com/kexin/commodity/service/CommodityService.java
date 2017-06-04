@@ -61,11 +61,10 @@ public class CommodityService {
 	 * @throws Exception
 	 *            抛出异常
 	 */
-	public String addCommodity(String commodityId, String commodityName, String commodityPrice, String commodityMuch,
+	public int addCommodity(String commodityId, String commodityName, String commodityPrice, String commodityMuch,
 			String commodityPeriod, String commodityYiedly, String categoryId, String userId) throws Exception{
-		commodityDao.addCommodity(commodityId, commodityName, commodityPrice, commodityMuch, commodityPeriod,
+		    return  commodityDao.addCommodity(commodityId, commodityName, commodityPrice, commodityMuch, commodityPeriod,
 				commodityYiedly, categoryId, userId);
-		return "添加";
 	}
 
 	/**

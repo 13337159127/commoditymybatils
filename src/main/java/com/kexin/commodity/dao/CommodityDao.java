@@ -1,5 +1,7 @@
 package com.kexin.commodity.dao;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -70,7 +72,8 @@ public class CommodityDao   {
 	 */
 	public int addCommodity(String commodityId, String commodityName, String commodityPrice, String commodityMuch,
 			String commodityPeriod, String commodityYiedly, String categoryId, String userId) throws Exception {
-		 Map<String,String> map=new HashMap<String,String>();
+		 SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		 Map  map=new HashMap();
 		 map.put("commodityId",commodityId);
 		 map.put("commodityName",commodityName);
 		 map.put("commodityPrice",commodityPrice);
@@ -79,6 +82,7 @@ public class CommodityDao   {
 		 map.put("commodityYiedly",commodityYiedly);
 		 map.put("categoryId",categoryId);
 		 map.put("userId",userId);
+		 map.put("sdf",sdf.format(new Date()));
 		 return sqlSessionTemplate.insert("com.kexin.commodity.dao.CommodityDao.addCommodity",map);
 	}
 

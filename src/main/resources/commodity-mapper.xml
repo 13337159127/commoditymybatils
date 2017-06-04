@@ -25,7 +25,7 @@
 	</select>
 	<!-- 添加商品信息 -->
 	<insert id="addCommodity" parameterType="map">
-		insert into commodity(commodityId,commodityName,commodityPrice,commodityMuch,commodityPeriod,commodityYiedly,categoryId,userId,entryTime) values(#{commodityId},#{commodityName},#{commodityPrice},#{commodityMuch},#{commodityPeriod},#{commodityYiedly},#{categoryId},#{userId},)
+        insert into commodity(commodityId,commodityName,commodityPrice,commodityMuch,commodityPeriod,commodityYiedly,categoryId,userId,entryTime) values(#{commodityId},#{commodityName},#{commodityPrice},#{commodityMuch},#{commodityPeriod},#{commodityYiedly},#{categoryId},#{userId},#{sdf})
 	</insert>
 	<!-- 修改商品信息 -->
 	<update id="updateCommodity" parameterType="java.util.Map">
