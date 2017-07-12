@@ -4,6 +4,7 @@
 <html lang="en">
 <head>
 <%@include file="/assets/jspfactory.jsp"%>
+<script src="${ctxPath}/assets/js/addcommodity2.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -60,35 +61,34 @@
 									<h4 class="title">添加商品信息</h4>
 								</div>
 								<div class="content table-responsive table-full-width">
-				<form action="${ctxPath}/commodity/addCommodity.kexin" method="get">				
+			  <form id="addcommodity" action="${ctxPath}/commodity/addCommodity.kexin" method="get">  		
 				<table class="table table-striped">
 				<tr>
 					<th width="30%">商品id</th>
-					<td width="70%"><input type="text" name="commodityId" value="">
+					<td width="70%"><input type="text" id="Id" name="commodityId" value="">
 				</tr>
 				<tr>
 					<th width="30%">商品名称</th>
-					<td width="70%"><input type="text" name="commodityName"
-						value="">
+					<td width="70%"><input type="text" id="name" name="commodityName" value="">
 				</tr>
 				<tr>
 					<th width="30%">商品价格</th>
-					<td width="70%"><input type="text" name="commodityPrice"
+					<td width="70%"><input type="text" id="price" name="commodityPrice"
 						value="">
 				</tr>
 				<tr>
 					<th width="30%">商品数量</th>
-					<td width="70%"><input type="text" name="commodityMuch"
+					<td width="70%"><input type="text" id="much" name="commodityMuch"
 						value="">
 				</tr>
 				<tr>
 					<th width="30%">商品保质期</th>
-					<td width="70%"><input type="text" name="commodityPeriod"
+					<td width="70%"><input type="text" id="period" name="commodityPeriod"
 						value="">
 				</tr>
 				<tr>
 					<th width="30%">商品生产地</th>
-					<td width="70%"><input type="text" name="commodityYiedly"
+					<td width="70%"><input type="text" id="yiedly" name="commodityYiedly"
 						value="">
 				</tr>
 				<tr>
@@ -103,7 +103,7 @@
 				</tr> 
 				</table>
 				<div class="text-center">
-					<button type="submit" class="btn btn-info btn-fill btn-wd">添加</button>
+					<input type="button" value="添加" class="btn btn-info btn-fill btn-wd" onclick="print()">
 				</div>
 				</form>
 				</div>

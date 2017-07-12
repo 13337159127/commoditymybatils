@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.kexin.supplier.dao.SupplierDao;
 import com.kexin.supplier.entity.SupplierEntity;
 
-@Service(value = "supplierService")
+@Service("supplierService")
 public class SupplierService  {
 	// 声明变量 @Autowired为变量赋值
 	@Autowired

@@ -16,7 +16,7 @@ import com.kexin.user.entity.UserEntity;
  * @author caokexin
  *
  */
-@Repository(value="userDao")
+@Repository("userDao")
 public class UserDao  {
 	
 	@Resource

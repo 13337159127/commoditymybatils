@@ -12,7 +12,7 @@ import com.kexin.commodity.dao.CommodityDao;
  * @author caokexin
  * 
  */
-@Service(value="commodityService")
+@Service("commodityService")
 public class CommodityService {	
 	//声明成员变量。@Autowired为成员变量赋值
 	@Autowired

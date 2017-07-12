@@ -13,7 +13,7 @@ import com.kexin.classify.entity.ClassifyEntity;
  * @author caokexin
  *
  */
-@Repository(value="classifyDao")
+@Repository("classifyDao")
 public class ClassifyDao  {
 	 
 	@Resource

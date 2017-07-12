@@ -66,16 +66,16 @@
                <td width="70%"><input type="text" name="supplierID" value=""></td>
                </tr>
                <tr>
-              <th width="30%">供货商姓名</th>
-              <td width="70%"><input type="text" name="supplierName" value=""></td>
+                <th width="30%">供货商姓名</th>
+                 <td width="70%"><input type="text" name="supplierName" value=""></td>
               </tr>
               <tr>
-              <th width="30%">供货商地址</th>
-              <td width="70%"><input type="text" name="supplierAddress" value=""></td>
+                <th width="30%">供货商地址</th>
+                <td width="70%"><input type="text" name="supplierAddress" value=""></td>
               </tr>
-               <tr>
-              <th width="30%">供货商电话</th>
-              <td width="70%"><input type="text" name="supplierPhone" value=""></td>
+              <tr>
+               <th width="30%">供货商电话</th>
+               <td width="70%"><input type="text" name="supplierPhone" value=""></td>
               </tr>
 				</table>
 				<div class="text-center">

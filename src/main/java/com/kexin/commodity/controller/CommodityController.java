@@ -64,7 +64,7 @@ public class CommodityController {
 	 */
 	@RequestMapping("/selectClassify")
 	public ModelAndView selectClassify() throws Exception {
-		List<Map> list = classifyService.selectClassify();
+		List list = classifyService.selectClassify();
 		ModelAndView mv = new ModelAndView();
 		// 封装要显示到视图的数据
 		mv.addObject("re", list);

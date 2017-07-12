@@ -12,7 +12,7 @@ import com.kexin.user.dao.UserDao;
  * @author caokexin
  *
  */
-@Service(value="userService")
+@Service("userService")
 public class UserService  {
 	//声明变量名 为变量赋值
 	@Autowired 

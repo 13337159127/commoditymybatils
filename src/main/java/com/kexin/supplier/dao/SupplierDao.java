@@ -15,7 +15,7 @@ import com.kexin.supplier.entity.SupplierEntity;
  * @author caokexin
  *
  */
-@Repository(value = "supplierDao")
+@Repository("supplierDao")
 public class SupplierDao {
 
 	@Resource

@@ -8,9 +8,9 @@
 	<title></title>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-    <!-- 获取项目名    赋值给变量 -->
+    <!-- 获取工程的名字 -->
     <c:set var="ctxPath" value="${pageContext.request.contextPath}"></c:set>  
-    <!-- 项目名+资源路径 -->
+    <!-- 工程名字  样式文件目录 -->
     <link href="${ctxPath}/assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="${ctxPath}/assets/css/animate.min.css" rel="stylesheet"/>  
     <link href="${ctxPath}/assets/css/paper-dashboard.css" rel="stylesheet"/>   

@@ -11,7 +11,7 @@ import com.kexin.classify.dao.ClassifyDao;
  * @author caokexin
  *
  */
-@Service(value="classifyService")
+@Service("classifyService")
 public class ClassifyService  {
 	//声明变量  为变量赋值
 	@Autowired
