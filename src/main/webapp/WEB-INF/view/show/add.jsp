@@ -103,7 +103,7 @@
 				</tr> 
 				</table>
 				<div class="text-center">
-					<input type="button" value="添加" class="btn btn-info btn-fill btn-wd" onclick="print()">
+					<input type="button" value="添加" class="btn btn-info btn-fill btn-wd"  onclick="commit()">
 				</div>
 				</form>
 				</div>
